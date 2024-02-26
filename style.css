@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #00ffa2fe;
+}
+
+.chat-container {
+    max-width: 1200px;
+    max-height: 1800px; /* Adjust the maximum height of the chat container */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chatbox {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chat-log {
+    list-style-type: none;
+    padding: 10px;
+    max-height: 400px; /* Adjust the maximum height of the chat log */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+.chat {
+    margin-bottom: 10px;
+}
+
+.incoming {
+    display: flex;
+    align-items: flex-start;
+}
+
+.outgoing {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.avatar {
+    margin-right: 10px;
+}
+
+.chat p {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+
+.chat-input textarea {
+    flex: 1;
+    resize: none;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.chat-input .upload-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-input .upload-btn:hover {
+    background-color: #0056b3;
+}
+
+.chat-input .file-name {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.image-preview {
+    max-width: 200px; /* Adjust the maximum width as needed */
+    max-height: 200px; /* Adjust the maximum height as needed */
+    overflow: hidden; /* Hide overflow to prevent the image from exceeding the container */
+}
+
+.image-preview img {
+    width: 100%; /* Make the image fill the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin-top: 5px;
+}
+#send-btn {
+    background-color: #016adb; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+    margin-left: 5px; /* Add margin for spacing */
+}
+
+#send-btn:hover {
+    background-color: #016adb; /* Darker blue on hover */
+}
+
+.upload-btn {
+    background-color: #28a745; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.upload-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+#message-input {
+    width: calc(100% - 110px); /* Adjust width to leave space for buttons */
+    padding: 10px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ced4da; /* Border color */
+    box-sizing: border-box; /* Box sizing */
+    margin-right: 10px; /* Add margin for spacing */
+}
+
